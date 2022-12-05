@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <title>Stock Ticker App</title>
+    </head>
+
+<body>
+        <h2>Stock Ticker App</h2>
+
+        <form action="http://localhost:8080/process" method="get">
+        <label for="user_input">Enter a stock ticker symbol OR a company name:</label><br>
+        <input type="text" id="user_input" name="user_input"><br>
+        <p>Did you enter a stock ticker symbol or a company name?</p>
+        <input type="radio" id="cname" name="btn" value="cname">
+        <label for="cname">Company Name</label><br>
+        <input type="radio" id="sticker" name="btn" value="sticker">
+        <label for="s_ticker">Stock Name</label><br>
+        <input type="submit" id="filter-btn" value="Go!"> 
+        <input type="reset">
+        </form>
+
+</body>
+</html>
